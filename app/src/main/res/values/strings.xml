@@ -4,7 +4,8 @@
     <string name="tab_text_2">Conceitos Físicos</string>
     <string name="tempo"> Adicione Tempo (Horas)</string>
     <string name="qtde"> Adicione Quantidade </string>
-    <string name="amperagem"> Adicione Amperagem (Ampère)</string>
+    <string name="amperage"> Adicione Amperagem (Ampère)</string>
     <string name="potencia"> Adicione Potência (Watts)</string>
     <string name="calc"> Calcular </string>
+    <string name="category"> Categoria </string>
 </resources>
