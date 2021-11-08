@@ -12,22 +12,13 @@
         android:layout_height="wrap_content"
         android:theme="@style/Theme.Power_Energy.AppBarOverlay">
 
-        <!--<TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
-            android:text="@string/app_name"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />-->
-
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!-- Remove pinned text from appBar -->
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
@@ -55,24 +46,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dip"
-                    android:text="@string/category"
-                    android:layout_marginBottom="5dp"/>
+                    android:layout_marginTop="20dip"
+                    android:text="@string/title_gadgets"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
 
                 <Spinner
-                    android:id="@+id/aparelhos"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:prompt="@string/app_name"
-                    android:layout_marginTop="50dip"
-                    android:background="@color/purple_200"
-                    android:padding="10dip"/>
-
-                <Spinner
-                    android:id="@+id/voltagem"
+                    android:id="@+id/gadgets"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:prompt="@string/app_name"
@@ -84,46 +68,62 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dip"
-                    android:text="@string/tempo"
+                    android:text="@string/title_voltage"
+                    android:layout_marginBottom="5dp" />
+
+                <Spinner
+                    android:id="@+id/voltage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/app_name"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/purple_200"
+                    android:padding="10dip"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/title_time"
                     android:layout_marginBottom="5dp" />
 
                 <EditText
-                    android:id="@+id/tempo"
+                    android:id="@+id/time"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:inputType="text"
                     android:layout_marginTop="2dip"
                     android:padding="10dip"
                     android:background="@color/purple_200"
-                    android:hint="@string/tempo"
+                    android:hint="@string/input_time"
                     />
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dip"
-                    android:text="@string/amperage"
+                    android:text="@string/title_amperage"
                     android:layout_marginBottom="5dp" />
 
                 <EditText
-                    android:id="@+id/amperagem"
+                    android:id="@+id/amperage"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:inputType="text"
                     android:layout_marginTop="2dip"
                     android:padding="10dip"
                     android:background="@color/purple_200"
-                    android:hint="@string/amperage"/>
+                    android:hint="@string/input_time"/>
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dip"
-                    android:text="@string/qtde"
+                    android:text="@string/title_amount"
                     android:layout_marginBottom="5dp" />
 
                 <EditText
-                    android:id="@+id/qtde"
+                    android:id="@+id/amount"
                     android:maxLines="1"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -131,27 +131,27 @@
                     android:layout_marginTop="2dip"
                     android:padding="10dip"
                     android:background="@color/purple_200"
-                    android:hint="@string/qtde"/>
+                    android:hint="@string/input_amount"/>
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dip"
-                    android:text="@string/potencia"
+                    android:text="@string/title_potency"
                     android:layout_marginBottom="5dp" />
 
                 <EditText
-                    android:id="@+id/potencia"
+                    android:id="@+id/potency"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:inputType="text"
                     android:layout_marginTop="2dip"
                     android:padding="10dip"
                     android:background="@color/purple_200"
-                    android:hint="@string/potencia"/>
+                    android:hint="@string/input_potency"/>
 
                 <TextView
-                    android:id="@+id/calculo"
+                    android:id="@+id/calculation"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dip"
@@ -161,10 +161,11 @@
                     />
 
                 <Button
-                    android:id="@+id/btn_calculo"
+                    android:id="@+id/btn_calculation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/calc" />
+                    android:text="@string/function_calc"
+                    android:textColor="@color/white" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

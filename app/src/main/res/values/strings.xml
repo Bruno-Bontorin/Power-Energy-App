@@ -1,11 +1,111 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 <resources>
-    <string name="app_name">Power Energy</string>
-    <string name="tab_text_1">Cálculo</string>
-    <string name="tab_text_2">Conceitos Físicos</string>
-    <string name="tempo"> Adicione Tempo (Horas)</string>
-    <string name="qtde"> Adicione Quantidade </string>
-    <string name="amperage"> Adicione Amperagem (Ampère)</string>
-    <string name="potencia"> Adicione Potência (Watts)</string>
-    <string name="calc"> Calcular </string>
-    <string name="category"> Categoria </string>
+    <!-- Environment variables -->
+    <string name="app_name"> Power Energy </string>
+    <string name="app_tab_1"> Calculation </string>
+    <string name="app_tab_2"> Physical Concepts </string>
+
+    <!-- Title variables -->
+    <string name="title_amount"> Amount </string>
+    <string name="title_amperage"> Amperage (Ampère) </string>
+    <string name="title_gadgets"> Gadgets </string>
+    <string name="title_potency"> Potency (Watts) </string>
+    <string name="title_time"> Time (Hours) </string>
+    <string name="title_voltage"> Voltage </string>
+
+    <!-- Input variables -->
+    <string name="input_amount"> Amount </string>
+    <string name="input_amperage"> Amperage (Ampère) </string>
+    <string name="input_category"> Category </string>
+    <string name="input_potency"> Potency (Watts) </string>
+    <string name="input_time"> Time (Hours) </string>
+
+    <!-- Function variables -->
+    <string name="function_calc"> Calculate </string>
+
+    <!-- Gadgets name array -->
+    <string-array name="gadgets_name_array">
+        <item>Custom</item>
+        <item>Shower</item>
+        <item>Refrigerator</item>
+        <item>Television</item>
+        <item>Lamp</item>
+    </string-array>
+
+    <!-- Custom obj array -->
+    <string-array name="custom_obj_array">
+        <!-- Voltage -->
+        <item>0</item>
+        <!-- Time -->
+        <item></item>
+        <!-- Amperage -->
+        <item></item>
+        <!-- Amount -->
+        <item></item>
+        <!-- Potency -->
+        <item></item>
+    </string-array>
+
+    <!-- Shower obj array -->
+    <string-array name="shower_obj_array">
+        <!-- Voltage -->
+        <item>0</item>
+        <!-- Time -->
+        <item>0.25</item>
+        <!-- Amperage -->
+        <item>12</item>
+        <!-- Amount -->
+        <item>1</item>
+        <!-- Potency -->
+        <item>2700</item>
+    </string-array>
+
+    <!-- Refrigerator obj array -->
+    <string-array name="refrigerator_obj_array">
+        <!-- Voltage -->
+        <item>1</item>
+        <!-- Time -->
+        <item>24</item>
+        <!-- Amperage -->
+        <item>10</item>
+        <!-- Amount -->
+        <item>1</item>
+        <!-- Potency -->
+        <item>2200</item>
+    </string-array>
+
+    <!-- Television obj array -->
+    <string-array name="television_obj_array">
+        <!-- Voltage -->
+        <item>0</item>
+        <!-- Time -->
+        <item>20</item>
+        <!-- Amperage -->
+        <item>26</item>
+        <!-- Amount -->
+        <item>2</item>
+        <!-- Potency -->
+        <item>3000</item>
+    </string-array>
+
+    <!-- Lamp obj array -->
+    <string-array name="lamp_obj_array">
+        <!-- Voltage -->
+        <item>0</item>
+        <!-- Time -->
+        <item>24</item>
+        <!-- Amperage -->
+        <item>0.23</item>
+        <!-- Amount -->
+        <item>10</item>
+        <!-- Potency -->
+        <item>30</item>
+    </string-array>
+
+    <!-- Array voltage -->
+    <string-array name="voltage_array">
+        <item>127</item>
+        <item>220</item>
+    </string-array>
+
 </resources>
